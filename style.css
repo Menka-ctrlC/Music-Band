@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(images/backg-blue.jpg);
+    background-size: cover; /* or use 'contain' based on your preference */
+    background-repeat: no-repeat;
+   
+}
+.main-heading , .drum-heading , .guitar-heading , .piano-heading{
+    text-align: center;
+    padding: 0.25rem;
+    font-family: "Babylonica", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    text-shadow: 3px 0 gold;
+}
+.box{
+    display: flex;
+    gap:1rem;
+    margin:1rem;
+}
+.box-2{
+    display: flex;
+    justify-content: center; 
+    gap:1rem;
+    margin:1rem;
+   
+}
+
+.category{
+width: 100%;
+height: 40vh;
+font-size: 5rem;
+font-family: "Babylonica", cursive;
+color: blue;
+text-shadow: 3px 0 #DBEDF3;
+border: 2px solid gold;
+box-shadow: 2px 2px 1px rgb(255, 227, 69);
+
+}
+.drumkit , .pianokit , .guitarkit{
+    width: 100%;
+height: 40vh;
+border: 2px solid gold;
+box-shadow: 2px 2px 1px rgb(255, 227, 69);
+}
+
+a{
+    width:100%;
+    text-decoration: none;
+}
+.drum{
+        background: url(images/drum.jpg) center / cover no-repeat;
+}
+.guitar{
+    background: url(images/guitar.jpg) center / cover no-repeat;
+}
+.piano{
+    background: url(images/piano.jpg) center / cover no-repeat;
+}
+
+.instruction{
+    text-align: center;
+    font-size: 2.50rem;
+    color : gold;
+    text-shadow: 1px 2px blue;
+    font-family: "Aladin", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.drum-body{
+    background-image: url(images/drum1.jpg);
+}
+.guitar-body{
+    background-image: url(images/guitar1.jpg);
+}
+.piano-body{
+    background-image: url(images/piano1.jpg);
+}
+.drum1{
+    background-image: url(images/drum-instruments/tom1.png);
+    color: gold;
+}
+.drum2{
+    background-image: url(images/drum-instruments/tom2.png);
+    color: gold;
+}
+.drum3{
+    background-image: url(images/drum-instruments/tom3.png);
+    color: gold;
+}
+.drum4{
+    background-image: url(images/drum-instruments/tom4.png);
+    color: gold;
+}
+.drum5{
+    background-image: url(images/drum-instruments/snare.png);
+    color: gold;
+}
+.drum6{
+    background-image: url(images/drum-instruments/kick.png);
+    color: gold;
+}
+.drum7{
+    background-image: url(images/drum-instruments/crash.png);
+    color: gold;
+}
+.guitar1{
+   background-image: url(images/guitar-instruments/guitar.jpg);
+   background-size: cover;
+   color: brown;
+}
+.guitar2{
+    background-image: url(images/guitar-instruments/gt.png);
+    background-size: cover;
+    color: brown;
+}
+.guitar3{
+    background-image: url(images/guitar-instruments/guitar.jpg);
+    background-size: cover;
+    color: brown;
+}
+.guitar4{
+    background-image: url(images/guitar-instruments/gt.png);
+    background-size: cover;
+    color: brown;
+}
+.guitar5{
+    background-image: url(images/guitar-instruments/guitar.jpg);
+    background-size: cover;
+    color: brown;
+}
+.guitar6{
+    background-image: url(images/guitar-instruments/gt.png);
+    background-size: cover;
+    color: brown;
+}
+
+.piano1{
+    background-image: url(images/piano-instruments/piano.png);
+    background-size: cover;
+    color: aqua;
+    }
+
+ .piano2{
+        background-image: url(images/piano-instruments/piano.png);
+        background-size: cover;
+        color: aqua;
+        }
+
+.piano3{
+    background-image: url(images/piano-instruments/piano.png);
+    background-size: cover;
+    color: aqua;
+    }
+
+ .piano4{
+        background-image: url(images/piano-instruments/piano.png);
+        background-size: cover;
+        color: aqua;
+        }
+
+ .piano5{
+    background-image: url(images/piano-instruments/piano.png);
+    background-size: cover;
+    color: aqua;
+      }
+
+
+ .piano6{
+       background-image: url(images/piano-instruments/piano.png);
+        background-size: cover;
+        color: aqua;
+     }
+
+ .pressed{
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+     opacity: 0.4;
+  }
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .box , .box-2{
+     display: flex;
+     flex-direction: row; 
+     align-items: flex-start; 
+     margin:1rem ;
+    }
+    .main-heading,.drum-heading, .guitar-heading, .piano-heading{
+     font-size: 3rem;
+     
+    }
+     .instruction{
+         font-size: 1.25rem;
+     }
+    
+ }
+ @media (max-width: 576px){
+     .box {
+         flex-direction: column; 
+         align-items: flex-start; 
+         margin:1rem ;
+         gap: 1rem;
+        }
+        .box-2{
+         display: flex;
+         flex-direction: row;
+         align-items: flex-start; 
+         justify-content: space-evenly; /* Distribute buttons evenly */
+         flex-wrap: wrap;
+         margin:1rem ;
+         gap: 1rem;
+        }
+        .main-heading , .drum-heading{
+         font-size: 2.5rem;
+        }
+        .instruction{
+         font-size: 1.25rem;
+     }
+     .box-2 .drumkit {
+       width: 80px; 
+         height: 80px; 
+       }
+      .box-2 .guitarkit{
+         width: 80px; 
+         height: 80px;
+       }
+       .box-2 .pianokit{
+         width: 80px; 
+         height: 80px;
+       }
+ 
+ }
+ @media (max-width: 1200px) {
+     .main-heading, .drum-heading, .guitar-heading, .piano-heading {
+         font-size: 4rem; 
+     }
+     .box, .box-2 {
+         gap: 1.5rem; 
+         max-width: 100%; 
+     }
+     .instruction {
+         font-size: 1.5rem; 
+     }
+     .category {
+         font-size: 4.5rem;
+     }
+     .drum1 ,.drum2,.drum3,.drum4,.drum5,.drum6,.drum7{
+         background-size: contain;
+        
+     }
+ }
