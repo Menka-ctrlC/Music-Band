@@ -227,16 +227,16 @@ a{
          font-size: 1.25rem;
      }
      .box-2 .drumkit {
-       width: 80px; 
-         height: 80px; 
+       width: 100px; 
+         height: 100px; 
        }
       .box-2 .guitarkit{
-         width: 80px; 
-         height: 80px;
+         width: 100px; 
+         height: 100px;
        }
        .box-2 .pianokit{
-         width: 80px; 
-         height: 80px;
+         width: 100px; 
+         height: 100px;
        }
  
  }
